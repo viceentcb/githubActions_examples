@@ -33,3 +33,16 @@ jobs:
       run: |
        npm install jest
        npm test
+
+  environment_test_execution:
+    runs-on: ubuntu-latest
+    needs: [my_build, test-execution]
+    env:
+      DESTINATION_PERSON: '2DAW'
+    steps:
+      - name: adeloyedeji
+        uses: adeloyedeji/github-actions-hello@v1.0
+        with: 
+          who-to-greet: 'Hello ${{Env.DESTINATION_PERSON}}'
+      
+
