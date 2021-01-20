@@ -43,6 +43,6 @@ jobs:
       - name: adeloyedeji
         uses: adeloyedeji/github-actions-hello@v1.0
         with: 
-          who-to-greet: 'Hello ${{Env.DESTINATION_PERSON}}'
+          who-to-greet: '${{Env.DESTINATION_PERSON}}'
       
 
