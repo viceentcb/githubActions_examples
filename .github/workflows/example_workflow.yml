@@ -5,7 +5,7 @@ on:
    - react_app_deploy
  
 jobs:
-  Build job:
+  Build_job:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
@@ -16,15 +16,25 @@ jobs:
          npm run build
       - name: Up
         uses: actions/upload-artifact@v2
+        with:
+          name: up_artifacts
+          path: build
 
-  Deploy job:
+  Deploy_job:
     runs-on: ubuntu-latest
-    needs: Build job
+    needs: Build_job
     steps:
       - name: Download
         uses: actions/download-artifact@v2
+        with: 
+          name: up_artifacts
       - name: To deploy
         uses: dswistowski/surge-sh-action@v1
+        with:
+          domain: 'viceentcb.surge.sh'
+          project: '.'
+          login: ${{ secrets.SURGELOGIN }}
+          token: ${{ secrets.SURGETOKEN }}
 
 
 
