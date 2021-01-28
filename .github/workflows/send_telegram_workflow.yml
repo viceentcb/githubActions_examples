@@ -18,8 +18,5 @@ jobs:
           TokenBot: ${{secrets.BOTTOKEN }}
           ChatId: ${{secrets.CHAT_ID }}
           Name: "Canario"
-          message: this input
-      - run: echo "Mensaje enviado"
-
 
 

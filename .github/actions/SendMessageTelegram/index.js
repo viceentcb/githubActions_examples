@@ -21,4 +21,4 @@ try {
     core.setFailed(error.message);
   }
 
-// core.setOutput("message", "Mensaje enviado con exito");
+ core.setOutput("message", "Mensaje enviado con exito");
