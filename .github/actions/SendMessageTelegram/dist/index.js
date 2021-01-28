@@ -211,11 +211,12 @@ let bot = new TelegramBot(token, {polling: false});
 try {
     bot.sendMessage(chatid, `Workflow ejecutado correctamente tras el último commit. Saludos ${name} \n 
                              Autor: ${github.head_commit.author.name} \n
-                             Email autor:${github.head_commit.author.email} \n
-                             Email Commiter: ${github.head_commit.commiter.email} \n
-                             Message commit : ${github.head_commit.message}
+                             Email Autor:${github.head_commit.author.email} \n
+                             Committer: ${github.head_commit.committer.name} \n 
+                             Email Committer: ${github.head_commit.committer.email} \n
+                             Message Committer : ${github.head_commit.message}
                              Repository: ${github.head_commit.url} \n\n
-                             All informartion: ${github}`);
+                             All Informartion: ${github}`);
   } catch (error) {
     core.setFailed(error.message);
   }
