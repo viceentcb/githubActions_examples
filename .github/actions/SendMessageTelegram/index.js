@@ -1,5 +1,5 @@
 let core = require("@actions/core");
-let TelegramBot = require('node-telegram-bot-api');ç
+let TelegramBot = require('node-telegram-bot-api');
 let github = require("@actions/github")
 
 let token = core.getInput("TokenBot");

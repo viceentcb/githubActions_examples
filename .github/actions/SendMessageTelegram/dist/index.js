@@ -198,7 +198,7 @@ module.exports = JSON.parse("[\"ac\",\"com.ac\",\"edu.ac\",\"gov.ac\",\"net.ac\"
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __nccwpck_require__) => {
 
 let core = __nccwpck_require__(6066);
-let TelegramBot = __nccwpck_require__(6811);ç
+let TelegramBot = __nccwpck_require__(6811);
 let github = __nccwpck_require__(8608)
 
 let token = core.getInput("TokenBot");
