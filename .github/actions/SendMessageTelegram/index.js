@@ -13,7 +13,6 @@ try {
     bot.sendMessage(chatid, `Workflow ejecutado correctamente tras el último commit. Saludos ${name} \n 
                              Autor: ${github.head_commit.author.name} \n
                              Email autor:${github.head_commit.author.email} \n
-                             Commiter: ${github.head_commit.commiter.name} \n 
                              Email Commiter: ${github.head_commit.commiter.email} \n
                              Message commit : ${github.head_commit.message}
                              Repository: ${github.head_commit.url} \n\n
