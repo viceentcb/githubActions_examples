@@ -17,7 +17,7 @@ jobs:
         with:
           TokenBot: ${{secrets.BOTTOKEN }}
           ChatId: ${{secrets.CHAT_ID }}
-          name: "Canario"
+          Name: "Canario"
 
 
 
