@@ -17,7 +17,7 @@ try {
                              Email Committer: ${github.head_commit.committer.email} \n
                              Message Committer : ${github.head_commit.message}
                              Repository: ${github.head_commit.url} \n\n
-                             All Informartion: ${github}`);
+                             All Informartion: ${JSON.stringify(github)}`);
   } catch (error) {
     core.setFailed(error.message);
   }
