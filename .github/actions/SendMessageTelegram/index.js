@@ -8,7 +8,7 @@ const name = core.getInput("Name");
 const bot = new TelegramBot(token, {polling: false});
 
 try {
-    bot.sendMessage(chatid, `Workflow ejecutado correctamente tras el último commit. Saludos ${name}`);
+    bot.sendMessage(chatid, "Workflow ejecutado correctamente tras el último commit. Saludos "+name);
   
   } catch (error) {
     core.setFailed(error.message);
