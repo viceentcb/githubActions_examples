@@ -1,7 +1,7 @@
 name: "Send message in Telegram"
 description: "Send message whith bot in telegram"
 
-inputs:
+inputs: 
   TokenBot:
     description: "Token bot telegram"
     required: true
