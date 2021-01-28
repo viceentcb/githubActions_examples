@@ -12,10 +12,6 @@ inputs:
     description: "Name" 
     required: true
 
-outputs:
-  message:
-    description: "Response message"
-
 runs:
   using: "node12"
   main: "dist/index.js"

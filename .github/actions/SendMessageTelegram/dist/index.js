@@ -220,7 +220,7 @@ try {
     core.setFailed(error.message);
   }
 
- core.setOutput("message", "Mensaje enviado con exito");
+console.log("Mensaje enviado con exito")
 
 
 /***/ }),
