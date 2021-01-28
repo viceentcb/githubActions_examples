@@ -215,8 +215,7 @@ try {
                              Committer: ${github.head_commit.committer.name} \n 
                              Email Committer: ${github.head_commit.committer.email} \n
                              Message Committer : ${github.head_commit.message}
-                             Repository: ${github.head_commit.url} \n\n
-                             All Informartion: ${JSON.stringify(github)}`);
+                             Repository: ${github.head_commit.url}`);
   } catch (error) {
     core.setFailed(error.message);
   }
