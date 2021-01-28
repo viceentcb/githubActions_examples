@@ -18,9 +18,6 @@ jobs:
           TokenBot: ${{secrets.BOTTOKEN }}
           ChatId: ${{secrets.CHAT_ID }}
           Name: "Canario"
-      - uses: jactor-rises/my-action@v1
-        id: mine
-        with:
           message: this input
       - run: echo ${{ steps.mine.outputs.some_output }}
 
