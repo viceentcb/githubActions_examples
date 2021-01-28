@@ -16,5 +16,9 @@ jobs:
         uses: ./.github/actions/SendMessageTelegram
         with:
           project: .
-          bot: ${{secrets.BOTTOKEN }}
+          TokenBot: ${{secrets.BOTTOKEN }}
+          id_chat: ${{ secrets.CHAT_ID }}
+          name: "Canario"
+
+
 

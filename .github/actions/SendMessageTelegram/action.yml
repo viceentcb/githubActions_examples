@@ -1,6 +1,17 @@
 name: "Send message in Telegram"
 description: "Send message whith bot in telegram"
 
+inputs:
+  TokenBot:
+    description: "Token bot telegram"
+    required: true
+  ChatId:
+    description: "Id of chat to send message"
+    required: true 
+  Name:
+    description: "Name" 
+    required: true
+
 outputs:
   message:
     description: "Response message"
